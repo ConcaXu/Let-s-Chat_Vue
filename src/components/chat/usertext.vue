@@ -100,10 +100,10 @@ export default {
         this.$message.error("瓦力拒绝接收你的图片！")
       }
       //判断图片大小
-      let isLt1M = file.size / 1024 / 1024 < 1;
+      let isLt1M = file.size / 1024 / 1024 < 10;
       console.log(file)
       if (!isLt1M) {
-        this.$message.error('上传图片大小不能超过 1MB!');
+        this.$message.error('上传图片大小不能超过 10MB!');
       }
       //判断图片的格式
       let imgType=file.name.substring(file.name.lastIndexOf(".")+1);

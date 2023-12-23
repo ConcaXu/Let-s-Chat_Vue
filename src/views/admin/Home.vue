@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header class="homeHeader">
-      <div class="title">微言聊天室管理端</div>
+      <div class="title">Let`s Chat聊天室管理端</div>
       <div>
         <el-dropdown class="choices" @command="commandHandler">
         <span class="el-dropdown-link">
@@ -34,7 +34,7 @@
           <el-breadcrumb-item>{{this.$router.currentRoute.name}}</el-breadcrumb-item>
         </el-breadcrumb>
         <div class="homeWelcome" v-if="this.$router.currentRoute.path=='/home'">
-          欢迎来到微言聊天室管理端！
+          欢迎来到Let`s Chat聊天室管理端！
         </div>
         <router-view class="homeRouterView"/>
       </el-main>

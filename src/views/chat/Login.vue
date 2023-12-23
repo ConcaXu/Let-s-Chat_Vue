@@ -6,7 +6,7 @@
     <el-main>
       <div class="loginContainer">
         <el-form ref="loginForm" :rules="rules" :model="loginForm" label-width="80px">
-          <h3 class="loginTitle">微言SubtleChat~</h3>
+          <h3 class="loginTitle">Let`s Chat</h3>
           <el-form-item label="用户名:" prop="username">
             <el-input type="text" v-model="loginForm.username" auto-complete="off" placeholder="请输入用户名"></el-input>
           </el-form-item>
